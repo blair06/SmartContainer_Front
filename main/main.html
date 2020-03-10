@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="jquery.sticky.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+   
+</head>
+<!-- TODO
+    1.aos 플러그인 실행
+-->
+<body >
+    
+    <div class="site-wrap">
+        <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+            <div class="menu" id="sticker">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <a href="main.html"><h1 class="logo">LIKELION</h1></a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </header>
+        
+        <div class="main-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mt-lg-5 text-center">
+                        <h1 class="mb-5" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="1500">
+                            Project SmartContainer With LIKELION at SYU
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <a href="#section2" class="mouse smoothscroll">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+            </a>
+        </div>
+        
+        <div class="main-card" id="section2">
+            <div class="container">
+                <p data-aos="fade-down" data-aos-duration="1000">MENU</p>
+                <div class="row">
+                    <div class="card col-md-3 col-sm-6" data-aos="fade-up"data-aos-easing="linear"
+     data-aos-duration="1000" ><a href="#">Container-List</a></div>
+                    <div class="card col-md-3 col-sm-6" data-aos="fade-up"data-aos-easing="linear"
+     data-aos-duration="1000"><a href="#">Locate</a></div>
+                    <div class="card col-md-3 col-sm-6" data-aos="fade-up"data-aos-easing="linear"
+     data-aos-duration="1000"><a href="#">Notice</a></div>
+                    <div class="card col-md-3 col-sm-6" data-aos="fade-up"data-aos-easing="linear"
+     data-aos-duration="1000"><a href="#">EMPTY</a></div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+        </div>
+    </div>
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+            $("#sticker").sticky({ topSpacing: 0 });
+        });
+    </script>
+</body>
+
+</html>
